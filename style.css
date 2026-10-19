@@ -1,4 +1,8 @@
 
+h2 {
+        
+    text-align: center;
+}
 
 h3 {
     text-align: center;
@@ -593,48 +597,142 @@ p {
     background: lightgray;
 }
 
-#close-panel-yuki,
-#close-panel-akitakada,
-#close-panel-higashihiroshima,
-#close-panel-shirokiyama,
-#close-panel-higashihiroshima,
-#close-panel-takehara,
-#close-panel-mihara,
-#close-panel-kamikamagari,
-#close-panel-etajima,
-#close-panel-kurahashi,
-#close-panel-sera,
-#close-panel-onomichi,
-#close-panel-fuchu,
-#close-panel-shinseki,
-#close-panel-shobara,
-#close-panel-ounan,
-#close-panel-izumo,
-#close-panel-okuizumo,
-#close-panel-matsue,
-#close-panel-ota,
-#close-panel-unnan,
-#close-panel-kumakogen,
-#close-panel-iyo,
-#close-panel-ikata,
-#close-panel-seiyo,
-#close-panel-touon,
-#close-panel-ainan,
-#close-panel-yusuhara,
-#close-panel-shimanto,
-#close-panel-sukumo,
-#close-panel-uguru,
-#close-panel-maniwa,
-#close-panel-daizen,
-#close-panel-yamaguchiken,
-#close-panel-kitakyushu,{
-    
-    margin-top: 1px;
-    cursor: pointer;
-    background-color: darkgray; /* Green */
-    border: 1px solid white; /* Darker Green */
+#site-header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    font-family: sans-serif;
+}
+
+.site-title-bar {
+    text-align: center;
+    padding: 15px 0 5px 0;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.8rem;
+}
+
+
+
+/* Desktop Navigation Bar */
+.desktop-nav {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
     color: white;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 10px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 15px;
+}
+
+.nav-links > li:hover > a {
+    background-color: #555;
+}
+
+/* Desktop Dropdown for Themes/Categories */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile Navigation (Hidden on Desktop by default) */
+.mobile-nav-container {
+    display: none;
+}
+
+.mobile-menu-btn {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu-panel {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.mobile-menu-panel.open {
+    display: block;
+}
+
+.mobile-nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav-links li a,
+.mobile-dropdown-toggle {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.mobile-submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #efefef;
+}
+
+.mobile-submenu.open {
+    display: block;
+}
+
+.mobile-submenu li a {
+    padding-left: 30px;
+    font-size: 14px;
 }
