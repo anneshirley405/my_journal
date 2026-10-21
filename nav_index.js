@@ -8,6 +8,12 @@ const menuData = [
         title: "作者的话",
         url: "index.html"
     },
+    
+    {
+        title: "福音单张",
+        url: "pamphlet.html"
+    },
+    
     {
         title: "我的文章",
       url: "articles.html"
