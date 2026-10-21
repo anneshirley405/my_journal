@@ -5,26 +5,29 @@ const siteTitle = ""; // Leave as "" if you don't want a title above the tabs
 
 const menuData = [
     {
-        title: "作者的话 (About)",
+        title: "作者的话",
         url: "index.html"
     },
     {
-        title: "Blogs",
+        title: "我的文章",
+      url: "articles.html"
         // Items with "subItems" will open a clean dropdown menu when hovered/clicked
-        subItems: [
-            { title: "My First Blog", url: "blog1.html" },
-            { title: "Second Blog Post", url: "blog2.html" }
-        ]
+
+        //               subItems: [
+        //                  { title: "My First Blog", url: "blog1.html" },
+        //                 { title: "Second Blog Post", url: "blog2.html" }
+        //            ]
     },
     {
-        title: "Theme: Communication",
-        subItems: [
-            { title: "Daryl Davis", url: "daryl_davis.html" },
-            { title: "The Radical Candor", url: "radical_candor.html" }
-        ]
+        title: "把圣经带进生活",
+        url: "bible_in_daily_life.html"
+        //        subItems: [
+        //           { title: "Daryl Davis", url: "daryl_davis.html" },
+        //           { title: "The Radical Candor", url: "radical_candor.html" }
+        //      ]
     },
     {
-        title: "Useful Links",
+        title: "参考资料",
         url: "links.html"
     }
 ];
@@ -106,8 +109,9 @@ function renderHeader() {
                 padding: 10px 16px;
                 color: #334155;
                 text-decoration: none;
-                font-size: 14px;
-                font-weight: 500;
+                font-size: 16px;   /*font size of menu*/
+                font-weight: bold;
+               /* font-weight: 500;*/
                 border-right: 1px solid #e2e8f0;
                 transition: background-color 0.2s, color 0.2s;
             }
